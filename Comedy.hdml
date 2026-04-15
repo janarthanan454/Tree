@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+.container {
+  margin-top: 20%;
+}
+
+h1 {
+  color: pink;
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: pink;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Hey ❤️</h1>
+
+  <p>
+    Unnai mudhal murai pesina naal la irundhu, <br>
+    en manasu un kitta dhaan irukku… <br>
+    solla bayandhen, aana inimey mudiyala… <br><br>
+
+    <b>I LOVE YOU COMEDY ❤️</b><br><br>
+
+    Nee en life la varuvaaya?
+  </p>
+
+  <button onclick="showLove()">Click Me 💖</button>
+</div>
+
+<script>
+function showLove() {
+  alert("I LOVE YOU SO MUCH ❤️");
+}
+</script>
+
+</body>
+</html>

@@ -70,3 +70,106 @@ function showLove() {
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For You ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  text-align: center;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+/* Stars */
+.stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 
+    100px 200px white, 200px 300px white, 300px 100px white,
+    400px 400px white, 500px 200px white, 600px 300px white,
+    700px 150px white, 800px 250px white, 900px 350px white;
+  animation: moveStars 10s linear infinite;
+}
+
+@keyframes moveStars {
+  from {transform: translateY(0);}
+  to {transform: translateY(-1000px);}
+}
+
+/* Content */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 40px;
+  color: pink;
+  text-shadow: 0 0 20px pink;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Button */
+.call-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 18px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 0 15px red;
+  transition: 0.3s;
+}
+
+.call-btn:hover {
+  background: pink;
+  box-shadow: 0 0 25px pink;
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+  <h1>For You ❤️</h1>
+
+  <p>
+    உன்னுடன் பேசும் ஒவ்வொரு நொடியும், <br>
+    என் மனசு உன்னோடே நின்றுவிடுது... <br>
+    சொல்லாமல் இருந்த காதல், இன்று சொல்லணும் போல...<br><br>
+
+    <b style="font-size:25px; color:red;">I LOVE YOU ❤️</b><br><br>
+
+    நீ என் வாழ்க்கை ல வருவாயா?
+  </p>
+
+  <!-- 👇 IMPORTANT: number change panniko -->
+  <a href="tel:9003598699">
+    <button class="call-btn">Call Me 💖</button>
+  </a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  background: radial-gradient(circle at bottom, #0b1d2a, #000000);
+  color: white;
+  text-align: center;
+}
+
+/* Stars background */
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.stars::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  box-shadow:
+    50px 100px white, 150px 200px white, 250px 300px white,
+    350px 150px white, 450px 250px white, 550px 350px white,
+    650px 100px white, 750px 200px white, 850px 300px white,
+    950px 150px white;
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  from {transform: translateY(0);}
+  to {transform: translateY(-1000px);}
+}
+
+/* Content */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Title */
+h1 {
+  font-size: 40px;
+  color: pink;
+  text-shadow: 0 0 20px pink;
+}
+
+/* Text */
+p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Love text */
+.love {
+  font-size: 24px;
+  color: red;
+  text-shadow: 0 0 10px red;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 18px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 0 15px red;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: pink;
+  box-shadow: 0 0 25px pink;
+}
